@@ -1,0 +1,94 @@
+if weekly_self_study_hours <= 7.25:
+|   if weekly_self_study_hours <= 3.55:
+|   |   if weekly_self_study_hours <= 1.05:
+|   |   |   if weekly_self_study_hours <= 0.55:
+|   |   |   |   if attendance_percentage <= 71.45:
+|   |   |   |   |   --> n=1,194  P(Fail)=0.715  => FLAG (at-risk)
+|   |   |   |   else:  # attendance_percentage > 71.45
+|   |   |   |   |   --> n=12,680  P(Fail)=0.676  => FLAG (at-risk)
+|   |   |   else:  # weekly_self_study_hours > 0.55
+|   |   |   |   if attendance_percentage <= 89.45:
+|   |   |   |   |   --> n=1,729  P(Fail)=0.617  => FLAG (at-risk)
+|   |   |   |   else:  # attendance_percentage > 89.45
+|   |   |   |   |   --> n=819  P(Fail)=0.573  => FLAG (at-risk)
+|   |   else:  # weekly_self_study_hours > 1.05
+|   |   |   if weekly_self_study_hours <= 2.35:
+|   |   |   |   if weekly_self_study_hours <= 1.95:
+|   |   |   |   |   --> n=5,519  P(Fail)=0.532  => FLAG (at-risk)
+|   |   |   |   else:  # weekly_self_study_hours > 1.95
+|   |   |   |   |   --> n=2,977  P(Fail)=0.482  => FLAG (at-risk)
+|   |   |   else:  # weekly_self_study_hours > 2.35
+|   |   |   |   if weekly_self_study_hours <= 3.15:
+|   |   |   |   |   --> n=6,890  P(Fail)=0.433  => FLAG (at-risk)
+|   |   |   |   else:  # weekly_self_study_hours > 3.15
+|   |   |   |   |   --> n=4,021  P(Fail)=0.381  => FLAG (at-risk)
+|   else:  # weekly_self_study_hours > 3.55
+|   |   if weekly_self_study_hours <= 5.55:
+|   |   |   if weekly_self_study_hours <= 4.65:
+|   |   |   |   if weekly_self_study_hours <= 4.15:
+|   |   |   |   |   --> n=6,629  P(Fail)=0.319  => FLAG (at-risk)
+|   |   |   |   else:  # weekly_self_study_hours > 4.15
+|   |   |   |   |   --> n=6,365  P(Fail)=0.277  => ok
+|   |   |   else:  # weekly_self_study_hours > 4.65
+|   |   |   |   if weekly_self_study_hours <= 5.15:
+|   |   |   |   |   --> n=6,880  P(Fail)=0.236  => ok
+|   |   |   |   else:  # weekly_self_study_hours > 5.15
+|   |   |   |   |   --> n=6,203  P(Fail)=0.209  => ok
+|   |   else:  # weekly_self_study_hours > 5.55
+|   |   |   if weekly_self_study_hours <= 6.45:
+|   |   |   |   if weekly_self_study_hours <= 6.05:
+|   |   |   |   |   --> n=8,450  P(Fail)=0.180  => ok
+|   |   |   |   else:  # weekly_self_study_hours > 6.05
+|   |   |   |   |   --> n=7,441  P(Fail)=0.146  => ok
+|   |   |   else:  # weekly_self_study_hours > 6.45
+|   |   |   |   if weekly_self_study_hours <= 6.75:
+|   |   |   |   |   --> n=5,942  P(Fail)=0.127  => ok
+|   |   |   |   else:  # weekly_self_study_hours > 6.75
+|   |   |   |   |   --> n=10,463  P(Fail)=0.101  => ok
+else:  # weekly_self_study_hours > 7.25
+|   if weekly_self_study_hours <= 11.55:
+|   |   if weekly_self_study_hours <= 9.25:
+|   |   |   if weekly_self_study_hours <= 8.05:
+|   |   |   |   if weekly_self_study_hours <= 7.75:
+|   |   |   |   |   --> n=11,144  P(Fail)=0.085  => ok
+|   |   |   |   else:  # weekly_self_study_hours > 7.75
+|   |   |   |   |   --> n=7,216  P(Fail)=0.065  => ok
+|   |   |   else:  # weekly_self_study_hours > 8.05
+|   |   |   |   if weekly_self_study_hours <= 8.55:
+|   |   |   |   |   --> n=12,521  P(Fail)=0.056  => ok
+|   |   |   |   else:  # weekly_self_study_hours > 8.55
+|   |   |   |   |   --> n=19,238  P(Fail)=0.042  => ok
+|   |   else:  # weekly_self_study_hours > 9.25
+|   |   |   if weekly_self_study_hours <= 9.95:
+|   |   |   |   if weekly_self_study_hours <= 9.85:
+|   |   |   |   |   --> n=17,949  P(Fail)=0.031  => ok
+|   |   |   |   else:  # weekly_self_study_hours > 9.85
+|   |   |   |   |   --> n=3,073  P(Fail)=0.022  => ok
+|   |   |   else:  # weekly_self_study_hours > 9.95
+|   |   |   |   if weekly_self_study_hours <= 10.45:
+|   |   |   |   |   --> n=15,835  P(Fail)=0.020  => ok
+|   |   |   |   else:  # weekly_self_study_hours > 10.45
+|   |   |   |   |   --> n=37,416  P(Fail)=0.013  => ok
+|   else:  # weekly_self_study_hours > 11.55
+|   |   if weekly_self_study_hours <= 14.75:
+|   |   |   if weekly_self_study_hours <= 13.25:
+|   |   |   |   if weekly_self_study_hours <= 12.15:
+|   |   |   |   |   --> n=21,426  P(Fail)=0.007  => ok
+|   |   |   |   else:  # weekly_self_study_hours > 12.15
+|   |   |   |   |   --> n=41,419  P(Fail)=0.004  => ok
+|   |   |   else:  # weekly_self_study_hours > 13.25
+|   |   |   |   if attendance_percentage <= 77.85:
+|   |   |   |   |   --> n=14,087  P(Fail)=0.001  => ok
+|   |   |   |   else:  # attendance_percentage > 77.85
+|   |   |   |   |   --> n=44,800  P(Fail)=0.002  => ok
+|   |   else:  # weekly_self_study_hours > 14.75
+|   |   |   if weekly_self_study_hours <= 16.45:
+|   |   |   |   if weekly_self_study_hours <= 15.25:
+|   |   |   |   |   --> n=19,922  P(Fail)=0.001  => ok
+|   |   |   |   else:  # weekly_self_study_hours > 15.25
+|   |   |   |   |   --> n=47,436  P(Fail)=0.000  => ok
+|   |   |   else:  # weekly_self_study_hours > 16.45
+|   |   |   |   if class_participation <= 8.75:
+|   |   |   |   |   --> n=267,304  P(Fail)=0.000  => ok
+|   |   |   |   else:  # class_participation > 8.75
+|   |   |   |   |   --> n=25,012  P(Fail)=0.000  => ok

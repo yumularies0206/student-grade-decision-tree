@@ -1,0 +1,28 @@
+{
+  "best_params": {
+    "criterion": "entropy",
+    "max_depth": 5,
+    "min_samples_leaf": 500
+  },
+  "tuning": {
+    "best_mean_cv_score": 0.5234923704990043,
+    "standard_error": 0.0027680987317828345,
+    "chosen_mean_cv_score": 0.5213149002784728,
+    "n_configurations": 64,
+    "n_fits": 320,
+    "tuning_rows": 100000,
+    "scoring": "average_precision"
+  },
+  "thresholds": {
+    "t_f1": 0.3,
+    "t_cost": 0.16,
+    "t_theory": 0.16666666666666666
+  },
+  "logistic_thresholds": {
+    "t_f1": 0.27,
+    "t_cost": 0.13,
+    "t_theory": 0.16666666666666666
+  },
+  "depth": 5,
+  "n_leaves": 32
+}

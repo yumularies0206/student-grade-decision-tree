@@ -1,0 +1,55 @@
+{
+  "n_rows": 1000000,
+  "n_duplicate_ids": 0,
+  "n_missing_cells": 0,
+  "grade_counts": {
+    "A": 548644,
+    "B": 258174,
+    "C": 141980,
+    "D": 44998,
+    "F": 6204
+  },
+  "fail_rate": 0.051202,
+  "share_total_score_100": 0.268121,
+  "corr_with_fail": {
+    "weekly_self_study_hours": -0.38842878294212607,
+    "attendance_percentage": 0.0010486011553433809,
+    "class_participation": 0.0005861516032371605,
+    "total_score": -0.5507463390695675
+  },
+  "corr_with_total_score": {
+    "weekly_self_study_hours": 0.8122414301053531,
+    "attendance_percentage": -0.001013815988389282,
+    "class_participation": 0.000683544054868008
+  },
+  "median_study_hours": {
+    "pass": 15.4,
+    "fail": 3.0
+  },
+  "cost_fn": 10.0,
+  "cost_fp": 2.0,
+  "random_state": 11,
+  "n_train": 700000,
+  "n_val": 150000,
+  "n_test": 150000,
+  "fail_rate_train": 0.05120285714285714,
+  "fail_rate_val": 0.0512,
+  "fail_rate_test": 0.0512,
+  "root_split_gini_example": {
+    "feature": "weekly_self_study_hours",
+    "threshold": 4.75,
+    "n_root": 700000,
+    "n_left": 50126,
+    "n_right": 649874,
+    "p_fail_root": 0.05120285714285714,
+    "p_fail_left": 0.4800901727646331,
+    "p_fail_right": 0.018121974413501694,
+    "gini_root": 0.09716224912653049,
+    "gini_left": 0.4992071975589158,
+    "gini_right": 0.03558713691371618,
+    "gini_weighted_children": 0.06878630714214656,
+    "impurity_decrease": 0.028375941984383923,
+    "sklearn_root_impurity": 0.0971622491265306
+  },
+  "runtime_seconds": 254.1
+}

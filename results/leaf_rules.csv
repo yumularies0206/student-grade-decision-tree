@@ -1,0 +1,33 @@
+rule,n_students,p_fail,flag_F1_threshold,flag_cost_threshold
+weekly_self_study_hours <= 0.55 AND attendance_percentage <= 71.45,1194,0.7152428810720268,True,True
+weekly_self_study_hours <= 0.55 AND attendance_percentage > 71.45,12680,0.6763406940063091,True,True
+0.55 < weekly_self_study_hours <= 1.05 AND attendance_percentage <= 89.45,1729,0.6171197223828803,True,True
+0.55 < weekly_self_study_hours <= 1.05 AND attendance_percentage > 89.45,819,0.5726495726495726,True,True
+1.05 < weekly_self_study_hours <= 1.95,5519,0.531980431237543,True,True
+1.95 < weekly_self_study_hours <= 2.35,2977,0.4816929795095734,True,True
+2.35 < weekly_self_study_hours <= 3.15,6890,0.43338171262699565,True,True
+3.15 < weekly_self_study_hours <= 3.55,4021,0.38050236259636905,True,True
+3.55 < weekly_self_study_hours <= 4.15,6629,0.31935435208930457,True,True
+4.15 < weekly_self_study_hours <= 4.65,6365,0.2774548311076198,False,True
+4.65 < weekly_self_study_hours <= 5.15,6880,0.23590116279069767,False,True
+5.15 < weekly_self_study_hours <= 5.55,6203,0.2094147992906658,False,True
+5.55 < weekly_self_study_hours <= 6.05,8450,0.17976331360946746,False,True
+6.05 < weekly_self_study_hours <= 6.45,7441,0.14594812525198225,False,False
+6.45 < weekly_self_study_hours <= 6.75,5942,0.12672500841467518,False,False
+6.75 < weekly_self_study_hours <= 7.25,10463,0.10130937589601453,False,False
+7.25 < weekly_self_study_hours <= 7.75,11144,0.08470926058865758,False,False
+7.75 < weekly_self_study_hours <= 8.05,7216,0.06541019955654102,False,False
+8.05 < weekly_self_study_hours <= 8.55,12521,0.055666480313074036,False,False
+8.55 < weekly_self_study_hours <= 9.25,19238,0.04241605156461171,False,False
+9.25 < weekly_self_study_hours <= 9.85,17949,0.030642375619811688,False,False
+9.85 < weekly_self_study_hours <= 9.95,3073,0.022128213472177027,False,False
+9.95 < weekly_self_study_hours <= 10.45,15835,0.019576886643511208,False,False
+10.45 < weekly_self_study_hours <= 11.55,37416,0.012534744494333975,False,False
+11.55 < weekly_self_study_hours <= 12.15,21426,0.007420890506860824,False,False
+12.15 < weekly_self_study_hours <= 13.25,41419,0.004031966005939303,False,False
+13.25 < weekly_self_study_hours <= 14.75 AND attendance_percentage <= 77.85,14087,0.0006388869170156882,False,False
+13.25 < weekly_self_study_hours <= 14.75 AND attendance_percentage > 77.85,44800,0.001763392857142857,False,False
+14.75 < weekly_self_study_hours <= 15.25,19922,0.0007027406886858749,False,False
+15.25 < weekly_self_study_hours <= 16.45,47436,0.0002318913905051016,False,False
+weekly_self_study_hours > 16.45 AND class_participation <= 8.75,267304,0.0,False,False
+weekly_self_study_hours > 16.45 AND class_participation > 8.75,25012,7.996161842315688e-05,False,False

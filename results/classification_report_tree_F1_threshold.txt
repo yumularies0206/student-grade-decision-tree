@@ -1,0 +1,13 @@
+Threshold t = 0.300
+Confusion matrix (rows: actual positive, actual negative; columns: predicted positive, predicted negative)
+[[4688, 2992],
+ [4388, 137932]]
+
+              precision    recall  f1-score   support
+
+        Pass     0.9788    0.9692    0.9739    142320
+At-risk/Fail     0.5165    0.6104    0.5596      7680
+
+    accuracy                         0.9508    150000
+   macro avg     0.7476    0.7898    0.7668    150000
+weighted avg     0.9551    0.9508    0.9527    150000

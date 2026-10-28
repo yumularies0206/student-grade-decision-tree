@@ -1,0 +1,4 @@
+feature,label,gini_importance,permutation_importance,permutation_std
+weekly_self_study_hours,Weekly self-study hours,0.9997620200549557,0.46911042013401544,0.00039097444243404766
+attendance_percentage,Attendance (%),0.000167079120493893,-0.0010279315985369797,0.000660487500299443
+class_participation,Class participation (0-10),7.090082455033193e-05,-6.194311770846284e-07,1.858293531253885e-06
